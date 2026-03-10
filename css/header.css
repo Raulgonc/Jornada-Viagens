@@ -4,6 +4,7 @@ header {
   flex-direction: row;
   justify-content: space-between;
   padding: 38px 24px;
+  position: relative;
 }
 
 .logo {
@@ -22,4 +23,24 @@ nav {
 
 input[type="checkbox"]:checked ~ nav {
   display: block;
+  position: absolute;
+  top: 99%;
+  left: 0;
+  width: 100%;
+  background-color: var(--background-tertiary-color);
+}
+
+.list-link {
+  text-decoration: none;
+  font-weight: var(--menu-weigh);
+}
+
+.list-link li {
+  margin: 16px;
+}
+
+.list-link li a {
+  list-style: none;
+  color: var(--text-secondary-color);
+  text-decoration: none;
 }
