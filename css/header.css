@@ -5,13 +5,18 @@ header {
   justify-content: space-between;
   padding: 38px 24px;
   position: relative;
-  font-size: 
 }
 
 .logo {
   display: inline-block;
   width: 68px;
   height: 64px;
+}
+.img-mobile {
+  display: block;
+}
+.img-desktop {
+  display: none;
 }
 
 nav {
@@ -44,14 +49,13 @@ input[type="checkbox"]:checked ~ nav {
   list-style: none;
   color: var(--text-secondary-color);
   text-decoration: none;
-      font-size: 20px;
-
+  font-size: 20px;
 }
 
 @media screen and (min-width: 768px) {
   .navegacao-menu {
     margin-top: 0;
-    width: 467px; 
+    width: 467px;
   }
 
   .navegacao-menu label {
@@ -68,7 +72,36 @@ input[type="checkbox"]:checked ~ nav {
     align-items: center;
     padding: 0;
   }
-  .navigation-menu li {
-    margin: 0;
 }
+
+@media screen and (min-width: 1024px){
+
+  .img-mobile {
+    display: none;
+  }
+
+  .img-desktop {
+    display: block;
+  }
+
+  .navegacao-menu a:hover{
+    color:var(--primary-color) ;
+    
+    }
+  }
+header {
+    padding: 38px 120px;
 }
+
+
+@media screen and (min-width: 1090px){
+    header{
+        padding: 38px 160px;
+    }
+}
+
+
+
+
+
+
