@@ -3,5 +3,29 @@
   width: 100%;
   background-image: url(../Img/Img-hero-mobile.jpg);
   background-size: cover;
+}
+
+@media (min-width: 768px) {
+  .hero-img {
+  height: 620px;
+  width: 100%;
+  background-image: url(../Img/Img-hero-tablet.jpg);
+  background-size: cover;
 
 }
+}
+
+@media (min-width: 1024px) {
+  .hero-img {
+  height: 620px;
+  width: 100%;
+  background-image: url(../Img/Img-hero-desktop.jpg);
+  background-size: cover;
+
+}
+}
+
+
+
+
+
