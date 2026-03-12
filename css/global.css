@@ -75,3 +75,13 @@ body {
     width: 300px;
   }
 }
+
+@media screen and (min-width: 1440px) {
+  .SegmentTitle h2 {
+    font-size: 52px;
+  }
+
+  .SegmentTitle hr {
+    width: 360px;
+  }
+}
