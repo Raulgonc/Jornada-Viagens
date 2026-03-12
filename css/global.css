@@ -55,3 +55,23 @@ body {
   border: none;
   margin: 16px auto 32px;
 }
+
+@media screen and (min-width: 768px) {
+  .SegmentTitle h2 {
+    font-size: 36px;
+  }
+
+  .SegmentTitle hr {
+    width: 240px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .SegmentTitle h2 {
+    font-size: 44px;
+  }
+
+  .SegmentTitle hr {
+    width: 300px;
+  }
+}
