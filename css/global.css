@@ -38,13 +38,20 @@ button {
   box-sizing: border-box;
 }
 
-body{
+body {
   font-family: "montserrat";
 }
 
+.SegmentTitle h2 {
+  font-weight: var(--title-wheigh);
+  font-size: 28px;
+  text-align: center;
+}
 
-
- 
-
-  
-  
+.SegmentTitle hr {
+  width: 180px;
+  height: 4px;
+  background-color: var(--secondary-color);
+  border: none;
+  margin: 16px auto 32px;
+}
