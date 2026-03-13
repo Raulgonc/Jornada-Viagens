@@ -1,5 +1,5 @@
 .Card {
-  background-color: black;
+ 
   display: flex;
   align-items: center;
   text-align: center;
@@ -19,6 +19,7 @@
   margin-top: 0px;
   margin-bottom: 8px;
   padding: 0%;
+  background-color: rgba(0, 0, 0, 0);
 }
 
 .Card header p {
@@ -45,6 +46,26 @@
   font-weight: var(--title-weigh);
   padding: 0;
 }
+.Card.japao {
+  background-image: url('../Img/bg-card-tokyo.png');
+  
+  background-position: center;
+}
+.Card.sanAndreas {
+  background-image: url('../Img/bg-card-san-andreas.png');
+  background-position: center;
+}
+.Card.paraiba {
+  background-image: url('../Img/bg-card-paraiba.png');
+  background-position: center;
+}
+
+.Card.manaus {
+  background-image: url('../Img/bg-card-manaus.png');
+  background-position: center;
+}
+  
+  
 
 
 
@@ -82,6 +103,9 @@
   }
 }
  
+
+  
+
 /* ========================================
    DESKTOP (1024px em diante)
    ======================================== */
