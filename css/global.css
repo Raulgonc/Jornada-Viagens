@@ -16,15 +16,26 @@
   --text-primary-color: #222222;
   --text-secondary-color: #ffffff;
 
-  --title-wheigh: 700;
-  --text-wheigh: 400;
-  --menu-wheigh: 500;
+  --title-wheight: 700;
+  --text-wheight: 400;
+  --menu-wheight: 500;
 }
 
 /* CSS RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body,
 img,
 h1,
+h2,
+h3,
+h4,
+h5,
+h6,
 p,
 fieldset,
 legend,
@@ -38,14 +49,42 @@ button {
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: "montserrat";
+  background-color: var(--background-primary-color);
+  color: var(--text-primary-color);
+  line-height: 1.6;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* ========================================
+   SEGMENT TITLE - MOBILE (Base)
+   ======================================== */
+
+.SegmentTitle {
+  width: 100%;
+  padding: 0 16px;
 }
 
 .SegmentTitle h2 {
-  font-weight: var(--title-wheigh);
+  font-weight: var(--title-wheight);
   font-size: 28px;
   text-align: center;
+  color: var(--text-primary-color);
 }
 
 .SegmentTitle hr {
@@ -54,34 +93,112 @@ body {
   background-color: var(--secondary-color);
   border: none;
   margin: 16px auto 32px;
+  border-radius: 2px;
 }
 
-@media screen and (min-width: 768px) {
+/* ========================================
+   BUTTON
+   ======================================== */
+
+.button {
+  display: inline-block;
+  padding: 12px 24px;
+  background-color: var(--secondary-color);
+  color: var(--text-secondary-color);
+  text-decoration: none;
+  border-radius: 16px;
+  font-weight: var(--text-wheight);
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-family: "montserrat";
+  font-size: 20px;
+}
+
+.button:hover {
+  background-color: var(--primary-color);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(191, 1, 1, 0.3);
+}
+
+.button:active {
+  transform: translateY(0);
+}
+
+/* ========================================
+   TABLET (768px a 1023px)
+   ======================================== */
+
+@media (min-width: 768px) {
+  .SegmentTitle {
+    padding: 0 24px;
+  }
+
   .SegmentTitle h2 {
     font-size: 36px;
   }
 
   .SegmentTitle hr {
     width: 240px;
+    margin: 20px auto 40px;
+  }
+
+  .button {
+    padding: 14px 28px;
+    font-size: 15px;
   }
 }
 
-@media screen and (min-width: 1024px) {
+/* ========================================
+   DESKTOP (1024px a 1439px)
+   ======================================== */
+
+@media (min-width: 1024px) {
+  .SegmentTitle {
+    padding: 0 32px;
+  }
+
   .SegmentTitle h2 {
     font-size: 44px;
+    letter-spacing: 0.5px;
   }
 
   .SegmentTitle hr {
     width: 300px;
+    margin: 24px auto 48px;
+  }
+
+  .button {
+    padding: 14px 32px;
+    font-size: 26px;
+  }
+
+  .button:hover {
+    box-shadow: 0 8px 20px rgba(191, 1, 1, 0.4);
   }
 }
 
-@media screen and (min-width: 1440px) {
+/* ========================================
+   DESKTOP GRANDE (1440px+)
+   ======================================== */
+
+@media (min-width: 1440px) {
+  .SegmentTitle {
+    padding: 0 40px;
+  }
+
   .SegmentTitle h2 {
     font-size: 52px;
+    letter-spacing: 0.8px;
   }
 
   .SegmentTitle hr {
     width: 360px;
+    margin: 28px auto 56px;
+  }
+
+  .button {
+    padding: 0 36px;
+    font-size: 32px;
   }
 }

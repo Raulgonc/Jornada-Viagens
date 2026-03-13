@@ -48,3 +48,109 @@
 
 
 
+/* ========================================
+   TABLET (768px a 1023px)
+   ======================================== */
+ 
+@media (min-width: 768px) {
+  .Card {
+    width: 380px;
+    height: 340px;
+    padding: 32px 24px;
+    margin: 40px auto 32px;
+    border-radius: 20px;
+  }
+ 
+  .Card header {
+    margin-bottom: 12px;
+  }
+ 
+  .Card header p {
+    font-size: 22px;
+  }
+ 
+  .Card .card-body {
+    gap: 28px;
+  }
+ 
+  .Card .card-body h3 {
+    font-size: 48px;
+  }
+ 
+  .Card .card-body span {
+    font-size: 36px;
+  }
+}
+ 
+/* ========================================
+   DESKTOP (1024px em diante)
+   ======================================== */
+ 
+@media (min-width: 1024px) {
+  .Card {
+    width: 520px;
+    height: 320px;
+    padding: 36px 28px;
+    margin: 48px auto 36px;
+    border-radius: 24px;
+    transition: all 0.3s ease;
+  }
+ 
+  .Card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 24px rgba(255, 255, 255, 0.1);
+  }
+ 
+  .Card header {
+    margin-bottom: 16px;
+  }
+ 
+  .Card header p {
+    font-size: 24px;
+    letter-spacing: 0.5px;
+  }
+ 
+  .Card .card-body {
+    gap: 3px;
+    
+  }
+ 
+  .Card .card-body h3 {
+    font-size: 56px;
+    line-height: 1.2;
+  }
+ 
+  .Card .card-body span {
+    font-size: 40px;
+    letter-spacing: 0.3px;
+  }
+}
+ 
+/* ========================================
+   DESKTOP GRANDE (1440px em diante)
+   ======================================== */
+ 
+@media (min-width: 1440px) {
+  .Card {
+    width: 600px;
+    height: 360px;
+    padding: 40px 32px;
+    margin: 56px auto 40px;
+    border-radius: 28px;
+  }
+ 
+  .Card header p {
+    font-size: 26px;
+  }
+ 
+  .Card .card-body h3 {
+    font-size: 64px;
+  }
+ 
+  .Card .card-body span {
+    font-size: 44px;
+  }
+}
+
+
+
