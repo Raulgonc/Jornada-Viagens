@@ -1,0 +1,18 @@
+.buttonCategory {
+  background-color: #f0f0f0;
+  border: none;
+  color: var(--text-primary-color);
+  text-align: center;
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-size: 28px;
+  font-weight: var(--title-wheight);
+  cursor: pointer;
+  border-radius: 16px;
+  font-family: "montserrat", sans-serif;
+  width: 312px;
+  height: 220px;
+  margin: 24px auto 24px;
+}
