@@ -1,3 +1,7 @@
+/* ========================================
+   MOBILE (Base)
+   ======================================== */
+
 .buttonCategory {
   background-color: #f0f0f0;
   border: none;
@@ -6,8 +10,10 @@
   text-decoration: none;
   display: flex;
   flex-direction: column;
+  align-items: center;
   justify-content: center;
-  font-size: 28px;
+  gap: 16px;
+  font-size: 18px;
   font-weight: var(--title-wheight);
   cursor: pointer;
   border-radius: 16px;
@@ -15,4 +21,106 @@
   width: 312px;
   height: 220px;
   margin: 24px auto 24px;
+  transition: all 0.3s ease;
+}
+
+.buttonCategory:hover {
+  background-color: #e8e8e8;
+  transform: translateY(-4px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.buttonCategory .categoria-icon {
+  width: 64px;
+  height: 64px;
+  flex-shrink: 0;
+}
+
+/* ========================================
+   CONTAINER - Para organizar em grid
+   ======================================== */
+
+.CategoryButtons {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 24px;
+  justify-items: center;
+}
+
+/* ========================================
+   TABLET (768px a 1023px) - 2 COLUNAS
+   ======================================== */
+
+@media (min-width: 768px) {
+  .CategoryButtons {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 32px;
+    padding: 0 24px;
+  }
+
+  .buttonCategory {
+    width: 320px;
+    height: 240px;
+    font-size: 20px;
+    gap: 20px;
+    border-radius: 18px;
+    margin: 0;
+  }
+
+  .buttonCategory .categoria-icon {
+    width: 72px;
+    height: 72px;
+  }
+}
+
+/* ========================================
+   DESKTOP (1024px a 1439px) - 2 COLUNAS
+   ======================================== */
+
+@media (min-width: 1024px) {
+  .CategoryButtons {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+    padding: 0 120px;
+  }
+
+  .buttonCategory {
+    width: 100%;
+    max-width: 300px;
+    height: 260px;
+    font-size: 22px;
+    gap: 24px;
+    border-radius: 20px;
+  }
+
+  .buttonCategory .categoria-icon {
+    width: 80px;
+    height: 80px;
+  }
+}
+
+/* ========================================
+   DESKTOP GRANDE (1440px+) - 2 COLUNAS
+   ======================================== */
+
+@media (min-width: 1440px) {
+  .CategoryButtons {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 48px;
+    padding: 0 160px;
+  }
+
+  .buttonCategory {
+    width: 100%;
+    max-width: 320px;
+    height: 280px;
+    font-size: 24px;
+    gap: 28px;
+    border-radius: 24px;
+  }
+
+  .buttonCategory .categoria-icon {
+    width: 88px;
+    height: 88px;
+  }
 }
