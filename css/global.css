@@ -71,6 +71,20 @@ a {
   text-decoration: none;
 }
 
+.ContentTitle {
+  font-size: 28px;
+  margin: 16px 0;
+  font-weight: var(--title-wheight);
+}
+
+.ContentText {
+ font-size: 16px;
+    max-width: 500px;
+    padding: 0 24px;
+    margin: 16px 0 24px 0;
+    font-weight: var(--text-wheight);
+}
+
 /* ========================================
    SEGMENT TITLE - MOBILE (Base)
    ======================================== */

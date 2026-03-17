@@ -1,0 +1,32 @@
+.ImageContent-Payments {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+}
+
+
+.imageBag{
+    background: url(../Img/img-payment-bag.png) no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 144px;
+    height: 225px;
+}
+
+
+.imagePassaport{
+    background: url(../Img/img-payment-passaport.png) no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 144px;
+    height: 225px;
+}
+
+
+.imagePeople{
+    background: url(../Img/img-payment-people.png) no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 312px;
+    height: 182px;
+}
