@@ -1,0 +1,66 @@
+/* ========================================
+   MOBILE (Base)
+   ======================================== */
+
+.ImageContent-Payments {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto auto;
+  grid-template-areas:
+    "imageBag imagePassaport"
+    "imagePeople imagePeople";
+  gap: 16px;
+  margin: 24px 16px; /* ✅ Margens nas bordas */
+  max-width: calc(100% - 32px); /* ✅ Não toma tela toda */
+}
+
+.imageBag {
+  grid-area: imageBag;
+  background: url(../Img/img-payment-bag.png) no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  aspect-ratio: 1 / 1;
+}
+
+.imagePassaport {
+  grid-area: imagePassaport;
+  background: url(../Img/img-payment-passaport.png) no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  aspect-ratio: 1 / 1;
+}
+
+.imagePeople {
+  grid-area: imagePeople;
+  background: url(../Img/img-payment-people.png) no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  aspect-ratio: 2 / 1;
+}
+
+/* ========================================
+   TABLET (768px+)
+   ======================================== */
+
+@media (min-width: 768px) {
+  .ImageContent-Payments {
+    margin: 32px 24px;
+    max-width: calc(100% - 48px);
+    gap: 20px;
+  }
+}
+
+/* ========================================
+   DESKTOP (1024px+)
+   ======================================== */
+
+@media (min-width: 1024px) {
+  .ImageContent-Payments {
+    margin: 40px 120px;
+    max-width: calc(100% - 240px);
+    gap: 24px;
+  }
+}
